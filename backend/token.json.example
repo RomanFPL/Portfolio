@@ -1,0 +1,13 @@
+{
+  "type": "service_account all data below should be generated from google service account",
+  "project_id": "**********************",
+  "private_key_id": "**********************",
+  "private_key": "**********************",
+  "client_email": "**********************",
+  "client_id": "**********************",
+  "auth_uri": "**********************",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "**********************",
+  "client_x509_cert_url": "**********************",
+  "sheet_id": "Put here your sheet id"
+}
