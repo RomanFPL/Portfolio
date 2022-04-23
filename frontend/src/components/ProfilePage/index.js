@@ -1,12 +1,12 @@
 import { useContext } from "react"
 import { AppContext } from "../AppContext";
 
-const App = () => {
+const ProfilePage = () => {
     const context = useContext(AppContext);
     console.log(context)
   return (
-    <div>Hi there</div>
+    <div>Profile</div>
   )
 }
 
-export default App
+export default ProfilePage

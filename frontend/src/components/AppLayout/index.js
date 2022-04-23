@@ -1,7 +1,21 @@
+import { Link } from "react-router-dom";
+
 const AppLayout = ({ children }) => {
   return (
     <div>
-      <span>I am your menu</span>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/skills">Skills</Link>
+          </li>
+        </ul>
+      </nav>
       {children}
     </div>
   );
