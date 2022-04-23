@@ -1,0 +1,19 @@
+.menu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+}
+
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style-type: none;
+}

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import styles from './AppLayout.module.css';
 
 const AppLayout = ({ children }) => {
   return (
-    <div>
-      <nav>
+    <>
+      <nav className={styles.menu}>
         <ul>
           <li>
             <Link to="/about">About</Link>
@@ -17,7 +18,7 @@ const AppLayout = ({ children }) => {
         </ul>
       </nav>
       {children}
-    </div>
+    </>
   );
 };
 
