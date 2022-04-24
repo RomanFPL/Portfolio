@@ -1,6 +1,6 @@
 .menu {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,10 +9,9 @@
   overflow: hidden;
 }
 
-.menuHidden {
-    position: relative;
-    height: 0px;
-    overflow: hidden;
+.menuHidden ul a {
+  transition: all 1s ease-in-out;
+  transform: rotateX(90deg);
 }
 
 nav ul {
@@ -48,7 +47,7 @@ nav ul {
 }
 
 .menu li a:hover {
-  border: 2px solid rgb(91, 215, 91);
+  transform: rotateX(4deg) rotateZ(4deg);
   transition: all 1s ease-in-out;
 }
 
@@ -69,8 +68,9 @@ nav ul {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   gap: 20px;
+  transition: all 1s ease-in-out;
 }
 
 .contacts div {
@@ -80,4 +80,9 @@ nav ul {
 
 .contacts h2 {
   color: white;
+}
+
+.contactsHidden {
+  transition: all 1s ease-in-out;
+  transform: rotateX(90deg);
 }

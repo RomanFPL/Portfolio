@@ -1,9 +1,10 @@
 import { Facebook, LinkedIn, Mail } from "../../common/Icons";
 import styles from "./AppLayout.module.css";
+import cn from "classnames";
 
-const Contacts = () => {
+const Contacts = ({ item }) => {
   return (
-    <div className={styles.contacts}>
+    <div className={cn(styles.contacts, { [styles.contactsHidden]: !!item })}>
       <h2>Contacts</h2>
       <div>
         <a href="https://www.facebook.com/">
