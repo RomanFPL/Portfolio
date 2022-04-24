@@ -1,19 +1,76 @@
-.menu{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background: transparent;
+.menu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: transparent;
 }
 
 nav ul {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .menu li {
-    list-style-type: none;
+  list-style-type: none;
+  padding-bottom: 100px;
+}
+
+.menu li:nth-child(2n) {
+  padding-top: 50px;
+}
+
+.menu li:nth-child(3n) {
+  padding-top: 100px;
+}
+
+.menu li a {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 320px;
+  height: 180px;
+  display: block;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.menu li a:hover {
+  border: 2px solid rgb(91, 215, 91);
+  transition: all 1s ease-in-out;
+}
+
+.menu li a h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotate(-10deg);
+}
+
+.menu li a p {
+  padding-left: 60px;
+  padding-top: 30px;
+}
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  gap: 20px;
+}
+
+.contacts div {
+  display: flex;
+  gap: 10px;
+}
+
+.contacts h2 {
+  color: white;
 }
