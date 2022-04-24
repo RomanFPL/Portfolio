@@ -6,24 +6,32 @@
 .contentWrapper {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .contentWrapper > div {
-  width: 50%;
+  width: 46%;
 }
 
 .extendedLabel {
   margin-top: 20px;
-  padding: 0 10px;
-  background: #0001;
-  text-align: end;
 }
 
 .labelItem {
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #0001;
+}
+
+.extendedLabel p {
+  margin: 10px 0;
+  text-indent: 10px;
+  padding: 10px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .progressBar {
@@ -39,4 +47,13 @@
   height: 10px;
   background: #8bff8b;
   border-radius: 10px;
+}
+
+.itemList {
+  display: inline-block;
+  padding: 5px 20px;
+  font-weight: 700;
+  color: aliceblue;
+  background: #0001;
+  margin: 0 10px 10px 0;
 }
