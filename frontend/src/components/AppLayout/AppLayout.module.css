@@ -6,6 +6,13 @@
   align-items: center;
   position: absolute;
   background: transparent;
+  overflow: hidden;
+}
+
+.menuHidden {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
 }
 
 nav ul {
