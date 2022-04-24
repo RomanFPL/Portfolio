@@ -1,0 +1,42 @@
+.mainLabel > h2 {
+  padding: 0 10px 2px;
+  width: fit-content;
+  background: #0001;
+}
+.contentWrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.contentWrapper > div {
+  width: 50%;
+}
+
+.extendedLabel {
+  margin-top: 20px;
+  padding: 0 10px;
+  background: #0001;
+  text-align: end;
+}
+
+.labelItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progressBar {
+  background: #1119;
+  width: 50%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 3px;
+}
+
+.progressBar div {
+  height: 10px;
+  background: #8bff8b;
+  border-radius: 10px;
+}

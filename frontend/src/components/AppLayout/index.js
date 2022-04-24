@@ -25,11 +25,11 @@ const menuItemsArray = [
 ];
 
 const AppLayout = ({ children }) => {
-  const [item, setItem] = useState(null);
+  const [item, setItem] = useState(true);
 
   return (
     <>
-      <nav className={cn(styles.menu,{ [styles.menuHidden]: !!item })}>
+      <nav className={cn(styles.menu, { [styles.menuHidden]: !!item })}>
         <ul>
           {menuItemsArray.map(({ header, link, description }) => {
             return (
@@ -43,8 +43,8 @@ const AppLayout = ({ children }) => {
           })}
         </ul>
       </nav>
-      <Contacts item={item}/>
-      {children}
+      <Contacts item={item} />
+      <div className={styles.wrapper}>{children}</div>
     </>
   );
 };
