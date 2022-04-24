@@ -1,13 +1,12 @@
-import React from "react";
 import ChildSkillItem from "./ChildSkillItem";
 import styles from "./SkillsPage.module.css";
 
-const SkillElement = ({ label, childSkill }) => {
+const SkillElement = ({ label, childSkills }) => {
   return (
     <div className={styles.mainLabel}>
       <h2>{label}</h2>
-      {childSkill.map((childSkill) => {
-        return <ChildSkillItem />;
+      {childSkills.map((childSkill) => {
+        return <ChildSkillItem item={childSkill} key={childSkill.label}/>;
       })}
     </div>
   );
