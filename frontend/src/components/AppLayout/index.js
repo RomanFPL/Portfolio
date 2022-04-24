@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./AppLayout.module.css";
 import Contacts from "./Contacts";
@@ -23,14 +24,17 @@ const menuItemsArray = [
 ];
 
 const AppLayout = ({ children }) => {
+  const [item, setItem] = useState(null);
+  console.log(item);
+
   return (
     <>
-      <div>
+      <div className={item ? styles.menuScreenHidden : styles.menuScreen}>
         <nav className={styles.menu}>
           <ul>
             {menuItemsArray.map(({ header, link, description }) => {
               return (
-                <li key={link}>
+                <li key={link} onClick={() => setItem(link)}>
                   <Link to={link}>
                     <h2>{header}</h2>
                     <p>{description}</p>
