@@ -22,6 +22,7 @@
 
 .extendedLabel {
   margin-top: 10px;
+  /* transform: rotateX(40deg); */
 }
 
 .labelItem {

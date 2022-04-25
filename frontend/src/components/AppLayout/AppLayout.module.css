@@ -1,4 +1,6 @@
 .wrapper {
+  position: absolute;
+  top: 0;
   padding: 20px 50px;
 }
 
@@ -11,10 +13,12 @@
   position: absolute;
   background: transparent;
   overflow: hidden;
+  z-index: 9;
 }
 
 .menuHidden ul a {
   transition: all 0.5s ease-in-out;
+  transition-delay: 0.5s;
   transform: rotateX(90deg);
 }
 
@@ -93,6 +97,16 @@ nav ul {
 }
 
 .contactsHidden {
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: rotateX(90deg);
+}
+
+.menuBtn {
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }

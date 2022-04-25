@@ -5,6 +5,7 @@ import Spinner from "../Spinner";
 export const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
+  const [menuOpened, setMenuOpened] = useState(false);
   const [projectData, setProjectData] = useState(undefined);
   const [skillData, setSkillData] = useState(undefined);
   useEffect(() => {
@@ -20,7 +21,14 @@ const AppContextProvider = ({ children }) => {
     return <Spinner />;
   }
   return (
-    <AppContext.Provider value={{ projects: projectData, skills: skillData }}>
+    <AppContext.Provider
+      value={{
+        projects: projectData,
+        skills: skillData,
+        menuStatus: menuOpened,
+        menuAction: setMenuOpened,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

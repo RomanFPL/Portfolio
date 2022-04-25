@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import styles from "./AppLayout.module.css";
 import Contacts from "./Contacts";
 import cn from "classnames";
+import { AppContext } from "../AppContext";
+import { Window } from "../../common/Icons";
 
 const menuItemsArray = [
   {
@@ -25,15 +27,15 @@ const menuItemsArray = [
 ];
 
 const AppLayout = ({ children }) => {
-  const [item, setItem] = useState(true);
+  const { menuStatus, menuAction } = useContext(AppContext);
 
   return (
     <>
-      <nav className={cn(styles.menu, { [styles.menuHidden]: !!item })}>
+      <nav className={cn(styles.menu, { [styles.menuHidden]: menuStatus })}>
         <ul>
           {menuItemsArray.map(({ header, link, description }) => {
             return (
-              <li key={link} onClick={() => setItem(link)}>
+              <li key={link} onClick={() => menuAction(!!link)}>
                 <Link to={link}>
                   <h2>{header}</h2>
                   <p>{description}</p>
@@ -43,7 +45,13 @@ const AppLayout = ({ children }) => {
           })}
         </ul>
       </nav>
-      <Contacts item={item} />
+      <Contacts item={menuStatus} />
+      <button
+        className={styles.menuBtn}
+        onClick={() => menuAction(!menuStatus)}
+      >
+        <Window />
+      </button>
       <div className={styles.wrapper}>{children}</div>
     </>
   );

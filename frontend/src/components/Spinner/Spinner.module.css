@@ -6,7 +6,7 @@
   height: 100vh;
 }
 body {
-  background: #262626;
+  background: var(--bgcolor);
 }
 .loaderCircle {
   position: absolute;
