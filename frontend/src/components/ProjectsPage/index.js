@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { AppContext } from "../AppContext";
 import ProjectItem from "./ProjectItem";
 import styles from "./ProjectsPage.module.css";
 
@@ -7,25 +9,27 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing lit. Ducimus nihil possimus sed eum eaque debitis, cupiditate ,",
     projectPreviewLink: "/",
-    githubLink: "/"
+    githubLink: "/",
   },
   {
-    label: "Portfolio",
+    label: "PortfoDlio",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing lit. Ducimus nihil possimus sed eum eaque debitis, cupiditate ,",
     projectPreviewLink: "/",
-    githubLink: "/"
+    githubLink: "/",
   },
   {
-    label: "Portfolio",
+    label: "PortfolDio",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing lit. Ducimus nihil possimus sed eum eaque debitis, cupiditate ,",
     projectPreviewLink: "/",
-    githubLink: "/"
+    githubLink: "/",
   },
 ];
 
 const ProjectsPage = () => {
+  const context = useContext(AppContext);
+  console.log(context);
   return (
     <div>
       <h1>ProjectsPage</h1>
