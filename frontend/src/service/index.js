@@ -1,5 +1,5 @@
-const getApiData = async () => {
-  const getPromiseData = await fetch("http://localhost:3001/projects");
+const getApiData = async (url) => {
+  const getPromiseData = await fetch(url);
   const data = getPromiseData.json();
   return data;
 };

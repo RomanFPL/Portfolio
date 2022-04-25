@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { AppContext } from "../AppContext";
 import SkillElement from "./SkillElement";
 import styles from "./SkillsPage.module.css";
 
@@ -27,6 +29,8 @@ const skillList = [
 ];
 
 const SkillsPage = () => {
+  const { skills } = useContext(AppContext);
+  console.log(skills);
   return (
     <div>
       <h1>SkillsPage</h1>

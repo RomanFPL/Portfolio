@@ -4,9 +4,7 @@ import ProjectItem from "./ProjectItem";
 import styles from "./ProjectsPage.module.css";
 
 const ProjectsPage = () => {
-  const context = useContext(AppContext);
-  const projects = context.projects;
-  console.log(projects);
+  const { projects } = useContext(AppContext);
   return (
     <div>
       <h1>ProjectsPage</h1>

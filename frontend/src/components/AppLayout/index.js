@@ -25,7 +25,7 @@ const menuItemsArray = [
 ];
 
 const AppLayout = ({ children }) => {
-  const [item, setItem] = useState(false);
+  const [item, setItem] = useState(true);
 
   return (
     <>
