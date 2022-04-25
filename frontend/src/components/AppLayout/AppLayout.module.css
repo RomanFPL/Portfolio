@@ -14,7 +14,7 @@
 }
 
 .menuHidden ul a {
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: rotateX(90deg);
 }
 
@@ -47,16 +47,17 @@ nav ul {
   width: 320px;
   height: 180px;
   display: block;
-  border: 2px solid white;
+  border: 3px solid var(--invertedBorder);
   text-decoration: none;
-  color: white;
+  color: var(--mainTextColor);
   position: relative;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu li a:hover {
-  transform: rotateX(4deg) rotateZ(4deg);
-  transition: all 1s ease-in-out;
+  transform: translateY(-5px);
+  border: 3px solid var(--mainContextColor);
+  transition: all 0.5s ease-in-out;
 }
 
 .menu li a h2 {
@@ -69,6 +70,7 @@ nav ul {
 .menu li a p {
   padding-left: 60px;
   padding-top: 30px;
+  color: var(--mainTextColor);
 }
 .contacts {
   width: 100%;
@@ -78,7 +80,7 @@ nav ul {
   position: absolute;
   bottom: 10%;
   gap: 20px;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .contacts div {
@@ -87,7 +89,7 @@ nav ul {
 }
 
 .contacts h2 {
-  color: white;
+  color: var(--mainTextColor);
 }
 
 .contactsHidden {
