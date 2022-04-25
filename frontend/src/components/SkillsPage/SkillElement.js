@@ -3,12 +3,14 @@ import styles from "./SkillsPage.module.css";
 
 const SkillElement = ({ label, childSkills }) => {
   return (
-    <div className={styles.mainLabel}>
+    <>
       <h2>{label}</h2>
-      {childSkills.map((childSkill) => {
-        return <ChildSkillItem item={childSkill} key={childSkill.label}/>;
-      })}
-    </div>
+      <div className={styles.mainLabel}>
+        {childSkills.map((childSkill, idx) => {
+          return <ChildSkillItem item={childSkill} key={idx} />;
+        })}
+      </div>
+    </>
   );
 };
 

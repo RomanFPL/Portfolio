@@ -5,6 +5,7 @@ import styles from "./SkillsPage.module.css";
 
 const SkillsPage = () => {
   const { skills } = useContext(AppContext);
+  console.log(skills);
   return (
     <div>
       <h1>SkillsPage</h1>
