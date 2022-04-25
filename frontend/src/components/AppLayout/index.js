@@ -31,21 +31,25 @@ const AppLayout = ({ children }) => {
 
   return (
     <>
-      <nav className={cn(styles.menu, { [styles.menuHidden]: menuStatus })}>
-        <ul>
-          {menuItemsArray.map(({ header, link, description }) => {
-            return (
-              <li key={link} onClick={() => menuAction(!!link)}>
-                <Link to={link}>
-                  <h2>{header}</h2>
-                  <p>{description}</p>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-      <Contacts item={menuStatus} />
+      <div
+        className={cn(styles.overlay, { [styles.overlayHidden]: menuStatus })}
+      >
+        <nav className={cn(styles.menu, { [styles.menuHidden]: menuStatus })}>
+          <ul>
+            {menuItemsArray.map(({ header, link, description }) => {
+              return (
+                <li key={link} onClick={() => menuAction(!!link)}>
+                  <Link to={link}>
+                    <h2>{header}</h2>
+                    <p>{description}</p>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+        <Contacts item={menuStatus} />
+      </div>
       <button
         className={styles.menuBtn}
         onClick={() => menuAction(!menuStatus)}
