@@ -8,7 +8,9 @@ const ChildSkillItem = ({
     <div className={styles.extendedLabel}>
       <div className={styles.labelItem}>
         <h2>{label}</h2>
-        <ProgressBar progress={progress} />
+        <div>
+          <ProgressBar progress={progress} />
+        </div>
       </div>
       {description ? <p>{description}</p> : ""}
       {internalList
