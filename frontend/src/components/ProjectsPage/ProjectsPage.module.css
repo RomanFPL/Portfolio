@@ -8,6 +8,12 @@
 .contentWrapper > div {
   width: 46%;
   min-height: 180px;
+  transition: all 1s ease-in-out;
+}
+
+.contentWrapperHidden > div {
+  transform: rotateX(90deg);
+  transition: all 1s ease-in-out;
 }
 
 .projectWrapper {
