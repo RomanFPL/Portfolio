@@ -34,21 +34,6 @@
   border-right: 1px solid white;
 }
 
-.progressBar {
-  background: #1119;
-  width: 50%;
-  height: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 3px;
-}
-
-.progressBar div {
-  height: 10px;
-  background: #8bff8b;
-  border-radius: 10px;
-}
-
 .itemList {
   display: inline-block;
   padding: 5px 20px;

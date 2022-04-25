@@ -1,14 +1,19 @@
 import styles from "./ProjectsPage.module.css";
 import defaultProject from "../../common/coming.jpg";
 import { Github } from "../../common/Icons";
+import ProgressBar from "../ProgressBar";
 
 const ProjectItem = ({
-  project: { label, description, githubLink, projectPreviewLink },
+  project: { label, description, githubLink, projectPreviewLink, progress },
 }) => {
   return (
     <div className={styles.projectWrapper}>
       <div className={styles.textPart}>
-        <h2>{label}</h2>
+        <div className={styles.projectProgress}>
+          <h2>{label}</h2>
+          <span>{progress === "100" ? "finished" : "in progress"}</span>
+          <ProgressBar progress={progress} />
+        </div>
         <h3>Description</h3>
         <p>{description}</p>
       </div>
@@ -20,7 +25,12 @@ const ProjectItem = ({
         </div>
       </div>
       {githubLink ? (
-        <a className={styles.githubLink} href="/">
+        <a
+          className={styles.githubLink}
+          href={githubLink}
+          target="_blank"
+          rel="noreferrer"
+        >
           <Github />
         </a>
       ) : (

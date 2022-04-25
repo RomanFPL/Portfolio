@@ -1,3 +1,10 @@
+:root {
+  --mainContextColor: #00eaff;
+  /* --mainContextColor: #768687; */
+  --mainTextColor: #fff;
+  --invertedBorder: #3c3c3c;
+}
+
 * {
   margin: 0;
 }
@@ -34,4 +41,8 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+h1 {
+  color: var(--mainTextColor);
 }

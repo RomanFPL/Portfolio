@@ -1,0 +1,12 @@
+.progressBar {
+  background: var(--invertedBorder);
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.progressBar div {
+  background: var(--mainContextColor);
+  border-radius: 10px;
+}

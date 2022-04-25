@@ -3,7 +3,7 @@ import styles from "./Spinner.module.css";
 const Spinner = () => {
   return (
     <div className={styles.centerBody}>
-      <div class={styles.loaderCircle}>
+      <div className={styles.loaderCircle}>
         Loading
         <span></span>
       </div>

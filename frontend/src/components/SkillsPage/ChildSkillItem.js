@@ -1,3 +1,4 @@
+import ProgressBar from "../ProgressBar";
 import styles from "./SkillsPage.module.css";
 
 const ChildSkillItem = ({
@@ -7,9 +8,7 @@ const ChildSkillItem = ({
     <div className={styles.extendedLabel}>
       <div className={styles.labelItem}>
         <h2>{label}</h2>
-        <div className={styles.progressBar}>
-          <div style={{ width: `${progress}%` }} />
-        </div>
+        <ProgressBar progress={progress} />
       </div>
       {description ? <p>{description}</p> : ""}
       {internalList

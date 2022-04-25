@@ -4,10 +4,6 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  /****** center box
-    width: 300px;
-    height: 300px;
-    border: solid 1px #aaa; */
 }
 body {
   background: #262626;
@@ -20,13 +16,13 @@ body {
   width: 70px;
   height: 70px;
   background: transparent;
-  border: 3px solid #3c3c3c;
+  border: 3px solid var(--invertedBorder);
   border-radius: 50%;
   text-align: center;
   line-height: 70px;
   font-family: sans-serif;
   font-size: 12px;
-  color: #00eaff;
+  color: var(--mainContextColor);
   text-transform: uppercase;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
@@ -38,8 +34,8 @@ body {
   width: 100%;
   height: 100%;
   border: 3px solid transparent;
-  border-top: 3px solid #00eaff;
-  border-right: 3px solid #00eaff;
+  border-top: 3px solid var(--mainContextColor);
+  border-right: 3px solid var(--mainContextColor);
   border-radius: 50%;
   animation: animateC 2s linear infinite;
 }
@@ -60,10 +56,10 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #00eaff;
+  background: var(--mainContextColor);
   top: -6px;
   right: -8px;
-  box-shadow: 0 0 20px #00eaff;
+  box-shadow: 0 0 20px var(--mainContextColor);
 }
 @keyframes animateC {
   0% {
