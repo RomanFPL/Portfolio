@@ -1,28 +1,28 @@
 import SkillElement from "./SkillElement";
 import styles from "./SkillsPage.module.css";
 
-const childSkillsList = [
+const content = [
   {
-    label: "JavaScript",
-    progress: 90,
+    skillLabel: "JavaScript",
+    level: 90,
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing lit. Ducimus nihil possimus sed eum eaque debitis, cupiditate quos maiores molestias suscipit recusandae reprehenderit mollitia sint quo asperiores saepe! Ipsum, optio illum.",
-    internalList: ["Webpack", "React", "Vue", "Storybook"],
+    knowledgeList: ["Webpack", "React", "Vue", "Storybook"],
   },
   {
-    label: "React",
-    progress: 90,
+    skillLabel: "React",
+    level: 90,
   },
 ];
 
 const skillList = [
   {
     label: "Programing",
-    childSkills: childSkillsList,
+    childSkills: content,
   },
   {
     label: "Languages",
-    childSkills: childSkillsList,
+    childSkills: content,
   },
 ];
 
