@@ -47,3 +47,18 @@ body {
 h1 {
   color: var(--mainTextColor);
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--invertedBorder);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainTextColor);
+  border-radius: 5px;
+}
