@@ -4,6 +4,7 @@
   --mainTextColor: #ccc;
   --invertedBorder: #3c3c3c;
   --bgcolor: #262626;
+  --permanentAnimation: all 0.5s ease-in-out;
 }
 
 * {
