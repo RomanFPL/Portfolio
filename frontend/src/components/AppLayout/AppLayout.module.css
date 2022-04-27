@@ -121,10 +121,34 @@ nav ul {
 
 .menuBtn {
   position: fixed;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   z-index: 1000;
   right: 10px;
   top: 10px;
   background: none;
   border: none;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuBtn span {
+  align-self: center;
+  justify-self: center;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuBtnClose {
+  transform: rotateZ(45deg);
+  gap: 0;
+}
+
+.menuBtnClose .transparent {
+  background: transparent;
 }

@@ -4,7 +4,6 @@ import styles from "./AppLayout.module.css";
 import Contacts from "./Contacts";
 import cn from "classnames";
 import { AppContext } from "../AppContext";
-import { Window } from "../../common/Icons";
 
 const menuItemsArray = [
   {
@@ -51,10 +50,18 @@ const AppLayout = ({ children }) => {
         <Contacts item={menuStatus} />
       </div>
       <button
-        className={styles.menuBtn}
+        className={cn(styles.menuBtn, { [styles.menuBtnClose]: !menuStatus })}
         onClick={() => menuAction(!menuStatus)}
       >
-        <Window />
+        <span className={styles.transparent} />
+        <span />
+        <span className={styles.transparent} />
+        <span />
+        <span />
+        <span />
+        <span className={styles.transparent} />
+        <span />
+        <span className={styles.transparent} />
       </button>
       <div className={styles.wrapper}>{children}</div>
     </>
