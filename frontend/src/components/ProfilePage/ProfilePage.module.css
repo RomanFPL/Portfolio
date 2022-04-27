@@ -1,0 +1,14 @@
+.contentWrapper {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contentWrapper > div {
+  width: 50%;
+  height: 400px;
+  transition: all 1s ease-in-out;
+  border: 1px solid white;
+}

@@ -25,14 +25,6 @@ code {
     monospace;
 }
 
-body {
-  /* background: linear-gradient(-45deg, #efc4b6, #d18ea8, #23a6d5, #23d5ab); */
-  background: #62c1e3;
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-}
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -47,6 +39,10 @@ body {
 
 h1 {
   color: var(--mainTextColor);
+}
+
+.fullWidth {
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
