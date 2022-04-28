@@ -5,7 +5,7 @@ import Spinner from "../Spinner";
 export const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
-  const [menuOpened, setMenuOpened] = useState(false);
+  const [menuOpened, setMenuOpened] = useState(true);
   const [projectData, setProjectData] = useState(undefined);
   const [skillData, setSkillData] = useState(undefined);
   useEffect(() => {

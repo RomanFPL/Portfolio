@@ -1,14 +1,23 @@
 .contentWrapper {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   gap: 20px;
 }
 
 .contentWrapper > div {
-  width: 50%;
-  height: 400px;
+  width: 40%;
+  box-sizing: border-box;
   transition: all 1s ease-in-out;
-  border: 1px solid white;
+}
+
+.contentWrapper > div > h2 {
+  text-indent: 20px;
+}
+
+.contentWrapper > div > p {
+  color: var(--mainTextColor);
 }

@@ -37,7 +37,8 @@ code {
   }
 }
 
-h1 {
+h1,
+h2 {
   color: var(--mainTextColor);
 }
 
@@ -58,4 +59,124 @@ h1 {
 ::-webkit-scrollbar-thumb {
   background: var(--mainTextColor);
   border-radius: 5px;
+}
+
+.a,
+.aa,
+.m {
+  fill: none;
+}
+.b {
+  isolation: isolate;
+}
+.c {
+  opacity: 0.52;
+}
+.d {
+  fill: #fff;
+}
+.e {
+  fill: url(#a);
+}
+.f {
+  fill: #4a29ac;
+}
+.g {
+  fill: url(#b);
+}
+.h {
+  fill: url(#c);
+}
+.i {
+  fill: url(#d);
+}
+.j {
+  fill: #a274e3;
+}
+.k {
+  fill: #e476ff;
+}
+.l {
+  opacity: 0.79;
+}
+.m {
+  stroke: #e476ff;
+  stroke-width: 0.25px;
+}
+.aa,
+.m {
+  stroke-miterlimit: 10;
+}
+.n {
+  fill: #bfbfbf;
+}
+.o {
+  clip-path: url(#e);
+}
+.p {
+  opacity: 0.9;
+}
+.q {
+  fill: url(#f);
+}
+.r {
+  fill: url(#g);
+}
+.s {
+  opacity: 0.72;
+}
+.t {
+  fill: url(#h);
+}
+.u {
+  opacity: 0.77;
+}
+.v,
+.w,
+.x,
+.y {
+  mix-blend-mode: screen;
+}
+.v {
+  fill: url(#i);
+}
+.w {
+  fill: url(#j);
+}
+.x {
+  fill: url(#k);
+}
+.y {
+  fill: url(#l);
+}
+.z {
+  fill: #00e1ff;
+}
+.aa {
+  stroke: #00e1ff;
+  stroke-width: 0.5px;
+}
+.ab {
+  fill: url(#m);
+}
+.ac {
+  opacity: 0.34;
+}
+.ad {
+  fill: url(#n);
+}
+.ae {
+  opacity: 0.5;
+}
+.af {
+  opacity: 0.64;
+}
+.ag {
+  opacity: 0.82;
+}
+.ah {
+  fill: url(#o);
+}
+.ai {
+  fill: url(#p);
 }
