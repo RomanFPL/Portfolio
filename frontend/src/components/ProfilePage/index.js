@@ -1,33 +1,21 @@
-import { useContext, useEffect, useRef } from "react";
-import { AppContext } from "../AppContext";
 import styles from "./ProfilePage.module.css";
-import anime from "animejs";
 
 const ProfilePage = () => {
-  const context = useContext(AppContext);
-  const refer = useRef();
-  console.log(refer);
-  useEffect(() => {
-    // anime({
-    //   targets: refer.current.querySelectorAll("path"),
-    //   loop: true,
-    //   direction: "alternate",
-    //   strokeDashoffset: [anime.setDashoffset, 0],
-    //   easing: "easeInOutSine",
-    //   duration: 700,
-    //   delay: (el, i) => {
-    //     return i * 500;
-    //   },
-    // });
-  });
   return (
     <>
       <h1>About</h1>
       <div className={styles.contentWrapper}>
         <div>
-          <h2>
-            Hi there, I am Roman \(^_^)/ and here you can explore my portfolio:
-          </h2>
+          <p>
+            Hi there, I am Roman \(^_^)/ <br />
+            and here you can explore my portfolio:
+          </p>
+          <p className={styles.thin}>
+            I am a translator and economist by profession. I even worked for an
+            audit company for a while. At the same time, while studying at
+            university, programming became my hobby, and later I found a job as
+            a frontend developer and now I work as a full stack web developer.
+          </p>
           <p>So feel free to contact me)</p>
         </div>
         <div>

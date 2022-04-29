@@ -14,10 +14,16 @@
   transition: all 1s ease-in-out;
 }
 
-.contentWrapper > div > h2 {
+.contentWrapper > div > p {
+  font-style: italic;
   text-indent: 20px;
+  color: var(--mainTextColor);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.contentWrapper > div > p {
-  color: var(--mainTextColor);
+.contentWrapper > div .thin {
+  font-weight: 300;
+  font-size: 22px;
 }
