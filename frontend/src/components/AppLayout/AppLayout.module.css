@@ -49,6 +49,7 @@ nav ul {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  padding: 0;
 }
 
 .menu li {
@@ -76,6 +77,7 @@ nav ul {
   text-decoration: none;
   transition: var(--permanentAnimation);
   width: 320px;
+  overflow: hidden;
 }
 
 .menu li a:hover {
@@ -180,4 +182,60 @@ nav ul {
 
 .menuBtnClose:hover .transparent {
   background: transparent;
+}
+
+@media (max-width: 1100px) {
+  .menu li a {
+    font-size: 12px;
+    height: 135px;
+    padding: 10px;
+    width: 240px;
+  }
+
+  .menu li a p {
+    padding-left: 30px;
+  }
+
+  .contacts {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .contacts div svg {
+    height: 25px;
+  }
+}
+
+@media (max-width: 850px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    padding: 0;
+  }
+
+  .menu {
+    margin-top: 30px;
+    align-items: start;
+    position: static;
+    height: fit-content;
+  }
+
+  .menu li {
+    margin: 0;
+    padding: 10px !important;
+  }
+
+  .menu li a {
+    font-size: 14px;
+    height: 135px;
+    padding: 10px;
+    width: 360px;
+  }
+
+  .contacts {
+    position: static;
+    margin-top: 20px;
+  }
 }
