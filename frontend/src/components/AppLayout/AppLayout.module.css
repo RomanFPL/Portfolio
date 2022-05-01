@@ -1,43 +1,43 @@
 .wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 20px 50px;
   position: absolute;
   top: 0;
-  padding: 20px 50px;
-  box-sizing: border-box;
   width: 100%;
-  min-height: 100%;
 }
 
 .overlay {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 3;
   background: var(--bgcolor);
+  height: 100vh;
+  position: fixed;
   transition: var(--permanentAnimation);
+  width: 100%;
+  z-index: 3;
 }
 
 .overlayHidden {
-  visibility: hidden;
   background: transparent;
   transition: all 0.7s ease-in-out;
+  visibility: hidden;
 }
 
 .menu {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  position: absolute;
   background: transparent;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   overflow: hidden;
+  position: absolute;
+  width: 100%;
   z-index: 9;
 }
 
 .menuHidden ul a {
-  transition: var(--permanentAnimation);
-  transition-delay: 1s;
   transform: rotateX(90deg);
+  transition-delay: 1s;
+  transition: var(--permanentAnimation);
   visibility: hidden;
 }
 
@@ -65,53 +65,57 @@ nav ul {
 }
 
 .menu li a {
-  padding: 20px;
-  box-sizing: border-box;
-  width: 320px;
-  height: 180px;
-  display: block;
-  border: 3px solid var(--invertedBorder);
-  text-decoration: none;
-  color: var(--mainTextColor);
-  position: relative;
-  transition: var(--permanentAnimation);
   background: var(--bgcolor);
+  border: 3px solid var(--invertedBorder);
+  box-sizing: border-box;
+  color: var(--mainTextColor);
+  display: block;
+  height: 180px;
+  padding: 20px;
+  position: relative;
+  text-decoration: none;
+  transition: var(--permanentAnimation);
+  width: 320px;
 }
 
 .menu li a:hover {
-  visibility: visible;
-  transform: translateY(-5px);
   border: 3px solid var(--mainContextColor);
+  transform: translateY(-5px);
   transition: var(--permanentAnimation);
+  visibility: visible;
 }
 
-.menu li a:focus {
-  transition-delay: 0.5s;
+.menuHidden ul a:hover {
   transform: rotateX(90deg);
 }
 
+.menu li a:focus {
+  transform: rotateX(90deg);
+  transition-delay: 0.5s;
+}
+
 .menu li a h2 {
+  left: 10px;
   position: absolute;
   top: 10px;
-  left: 10px;
   transform: rotate(-10deg);
 }
 
 .menu li a p {
+  color: var(--mainTextColor);
   padding-left: 60px;
   padding-top: 30px;
-  color: var(--mainTextColor);
 }
 .contacts {
-  width: 100%;
+  align-items: center;
+  bottom: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: absolute;
-  z-index: 10;
-  bottom: 10%;
   gap: 20px;
+  position: absolute;
   transition: var(--permanentAnimation);
+  width: 100%;
+  z-index: 10;
 }
 
 .contacts div {
@@ -124,8 +128,8 @@ nav ul {
 }
 
 .contactsHidden {
-  transition: var(--permanentAnimation);
   transform: rotateX(90deg);
+  transition: var(--permanentAnimation);
 }
 
 .contacts div a svg path {
@@ -137,28 +141,28 @@ nav ul {
 }
 
 .menuBtn {
-  position: fixed;
+  background: none;
+  border: none;
+  cursor: pointer;
   display: grid;
   gap: 3px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  z-index: 1000;
+  position: fixed;
   right: 10px;
   top: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
   transition: var(--permanentAnimation);
+  z-index: 1000;
 }
 
 .menuBtn span {
   align-self: center;
-  justify-self: center;
-  display: block;
-  width: 8px;
-  height: 8px;
   background: white;
+  display: block;
+  height: 8px;
+  justify-self: center;
   transition: var(--permanentAnimation);
+  width: 8px;
 }
 
 .menuBtn:hover span {
@@ -166,8 +170,8 @@ nav ul {
 }
 
 .menuBtnClose {
-  transform: rotateZ(45deg);
   gap: 0;
+  transform: rotateZ(45deg);
 }
 
 .menuBtnClose .transparent {
