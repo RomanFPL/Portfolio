@@ -85,6 +85,11 @@ nav ul {
   transition: var(--permanentAnimation);
 }
 
+.menu li a:focus {
+  transition-delay: 0.5s;
+  transform: rotateX(90deg);
+}
+
 .menu li a h2 {
   position: absolute;
   top: 10px;

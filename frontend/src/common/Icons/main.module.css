@@ -1,0 +1,92 @@
+.absolute {
+  width: 60%;
+}
+.a,
+.k,
+.v {
+  fill: none;
+}
+.b {
+  isolation: isolate;
+}
+.c {
+  opacity: 0.52;
+}
+.d {
+  fill: #4a29ac;
+}
+.e {
+  fill: url(#a);
+}
+.f {
+  fill: url(#b);
+}
+.g {
+  fill: url(#c);
+}
+.h {
+  fill: #a274e3;
+}
+.i {
+  fill: #e476ff;
+}
+.j {
+  opacity: 0.79;
+}
+.k {
+  stroke: #e476ff;
+  stroke-width: 0.25px;
+}
+.k,
+.v {
+  stroke-miterlimit: 10;
+}
+.l {
+  fill: #fff;
+}
+.m {
+  fill: #bfbfbf;
+}
+.n {
+  clip-path: url(#d);
+}
+.o {
+  fill: url(#e);
+}
+.p {
+  opacity: 0.77;
+}
+.q,
+.r,
+.s,
+.t {
+  mix-blend-mode: screen;
+}
+.q {
+  fill: url(#f);
+}
+.r {
+  fill: url(#g);
+}
+.s {
+  fill: url(#h);
+}
+.t {
+  fill: url(#i);
+}
+.u {
+  fill: #00e1ff;
+}
+.v {
+  stroke: #00e1ff;
+  stroke-width: 0.5px;
+}
+.w {
+  fill: url(#j);
+}
+.x {
+  opacity: 0.34;
+}
+.y {
+  fill: url(#k);
+}

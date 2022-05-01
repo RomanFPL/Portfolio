@@ -12,6 +12,7 @@
   width: 40%;
   box-sizing: border-box;
   transition: all 1s ease-in-out;
+  position: relative;
 }
 
 .contentWrapper > div > p {
