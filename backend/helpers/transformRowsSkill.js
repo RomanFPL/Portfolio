@@ -10,7 +10,6 @@ const transformDataSkill = async (sheet) => {
       : { ...row }
   );
   const groupByLabel = extendParsedData.reduce((acc, cv) => {
-    console.log(cv);
     if (
       acc.length === 0 ||
       (acc.length !== 0 && !acc.some((item) => item.label === cv.label))
