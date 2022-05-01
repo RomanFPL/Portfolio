@@ -5,28 +5,8 @@ import Contacts from "./Contacts";
 import cn from "classnames";
 import { AppContext } from "../AppContext";
 
-const menuItemsArray = [
-  {
-    link: "/about",
-    header: "About",
-    description: "Here you can find brief information about me.",
-  },
-  {
-    link: "/projects",
-    header: "Projects",
-    description:
-      "Here is a list of projects I have worked on, their detailed description and links to the projects themselves.",
-  },
-  {
-    link: "/skills",
-    header: "Skills",
-    description:
-      "If you want to get acquainted with the technologies I worked with. On this page you can find a detailed list.",
-  },
-];
-
 const AppLayout = ({ children }) => {
-  const { menuStatus, menuAction } = useContext(AppContext);
+  const { menuStatus, menuAction, menu } = useContext(AppContext);
   const { pathname } = useLocation();
   useEffect(() => {
     if (pathname === "/") {
@@ -41,7 +21,7 @@ const AppLayout = ({ children }) => {
       >
         <nav className={cn(styles.menu, { [styles.menuHidden]: menuStatus })}>
           <ul>
-            {menuItemsArray.map(({ header, link, description }) => {
+            {menu.map(({ header, link, description }) => {
               return (
                 <li key={link} onClick={() => menuAction(!!link)}>
                   <Link to={link}>

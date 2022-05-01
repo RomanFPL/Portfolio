@@ -8,6 +8,7 @@ const AppContextProvider = ({ children }) => {
   const [menuOpened, setMenuOpened] = useState(true);
   const [projectData, setProjectData] = useState(undefined);
   const [skillData, setSkillData] = useState(undefined);
+  const [menuData, setMenuData] = useState(undefined);
   useEffect(() => {
     getApiData("http://localhost:3001/skills").then((data) =>
       setSkillData(data)
@@ -15,9 +16,12 @@ const AppContextProvider = ({ children }) => {
     getApiData("http://localhost:3001/projects").then((data) =>
       setProjectData(data)
     );
+    getApiData("http://localhost:3001/menu").then((data) =>
+      setMenuData(data)
+    );
   }, []);
 
-  if (!projectData || !skillData) {
+  if (!projectData || !skillData || !menuData) {
     return <Spinner />;
   }
   return (
@@ -25,6 +29,7 @@ const AppContextProvider = ({ children }) => {
       value={{
         projects: projectData,
         skills: skillData,
+        menu: menuData,
         menuStatus: menuOpened,
         menuAction: setMenuOpened,
       }}
