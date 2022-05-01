@@ -11,4 +11,8 @@ router.get("/skills", async function (req, res, next) {
   res.json(await transformDataSkill(await getSheet("skills")));
 });
 
+router.get("/menu", async function (req, res, next) {
+  res.json(await transformData(await getSheet("menu")));
+});
+
 module.exports = router;
