@@ -18,10 +18,10 @@ const Laptop = () => {
           y2="160.18"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#4a29ac" />
-          <stop offset="0.34" stop-color="#542daf" />
-          <stop offset="0.92" stop-color="#7039b6" />
-          <stop offset="1" stop-color="#743bb7" />
+          <stop offset="0" stopColor="#4a29ac" />
+          <stop offset="0.34" stopColor="#542daf" />
+          <stop offset="0.92" stopColor="#7039b6" />
+          <stop offset="1" stopColor="#743bb7" />
         </linearGradient>
         <radialGradient
           id="b"
@@ -30,12 +30,12 @@ const Laptop = () => {
           r="291.32"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#743bb7" />
-          <stop offset="0.12" stop-color="#7045bc" />
-          <stop offset="0.34" stop-color="#6561c8" />
-          <stop offset="0.61" stop-color="#528edd" />
-          <stop offset="0.94" stop-color="#39ccf9" />
-          <stop offset="1" stop-color="#34d9ff" />
+          <stop offset="0" stopColor="#743bb7" />
+          <stop offset="0.12" stopColor="#7045bc" />
+          <stop offset="0.34" stopColor="#6561c8" />
+          <stop offset="0.61" stopColor="#528edd" />
+          <stop offset="0.94" stopColor="#39ccf9" />
+          <stop offset="1" stopColor="#34d9ff" />
         </radialGradient>
         <linearGradient
           id="c"
@@ -58,19 +58,19 @@ const Laptop = () => {
           r="104.84"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#c157d3" />
-          <stop offset="0.14" stop-color="#bd5bd4" />
-          <stop offset="0.29" stop-color="#b267d8" />
-          <stop offset="0.43" stop-color="#9f7bdf" />
-          <stop offset="0.58" stop-color="#8598e9" />
-          <stop offset="0.72" stop-color="#63bcf5" />
-          <stop offset="0.81" stop-color="#4bd5fd" />
-          <stop offset="0.83" stop-color="#65dbfd" />
-          <stop offset="0.87" stop-color="#9ce8fe" />
-          <stop offset="0.91" stop-color="#c7f2fe" />
-          <stop offset="0.95" stop-color="#e5f9ff" />
-          <stop offset="0.98" stop-color="#f8fdff" />
-          <stop offset="1" stop-color="#fff" />
+          <stop offset="0" stopColor="#c157d3" />
+          <stop offset="0.14" stopColor="#bd5bd4" />
+          <stop offset="0.29" stopColor="#b267d8" />
+          <stop offset="0.43" stopColor="#9f7bdf" />
+          <stop offset="0.58" stopColor="#8598e9" />
+          <stop offset="0.72" stopColor="#63bcf5" />
+          <stop offset="0.81" stopColor="#4bd5fd" />
+          <stop offset="0.83" stopColor="#65dbfd" />
+          <stop offset="0.87" stopColor="#9ce8fe" />
+          <stop offset="0.91" stopColor="#c7f2fe" />
+          <stop offset="0.95" stopColor="#e5f9ff" />
+          <stop offset="0.98" stopColor="#f8fdff" />
+          <stop offset="1" stopColor="#fff" />
         </radialGradient>
         <radialGradient
           id="f"
@@ -80,14 +80,14 @@ const Laptop = () => {
           gradientTransform="matrix(0.05, -0.03, 0.03, 0.05, 1408.87, -498.33)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#0023f6" />
-          <stop offset="0.07" stop-color="#001dcd" />
-          <stop offset="0.17" stop-color="#001597" />
-          <stop offset="0.28" stop-color="#000f69" />
-          <stop offset="0.38" stop-color="#000a43" />
-          <stop offset="0.49" stop-color="#000526" />
-          <stop offset="0.59" stop-color="#000211" />
-          <stop offset="0.69" stop-color="#000104" />
+          <stop offset="0" stopColor="#0023f6" />
+          <stop offset="0.07" stopColor="#001dcd" />
+          <stop offset="0.17" stopColor="#001597" />
+          <stop offset="0.28" stopColor="#000f69" />
+          <stop offset="0.38" stopColor="#000a43" />
+          <stop offset="0.49" stopColor="#000526" />
+          <stop offset="0.59" stopColor="#000211" />
+          <stop offset="0.69" stopColor="#000104" />
           <stop offset="0.78" />
         </radialGradient>
         <radialGradient
@@ -98,14 +98,14 @@ const Laptop = () => {
           gradientTransform="matrix(0.05, -0.03, 0.03, 0.05, 1408.87, -498.33)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="aqua" />
-          <stop offset="0.08" stop-color="#00cdcd" />
-          <stop offset="0.19" stop-color="#009797" />
-          <stop offset="0.29" stop-color="#006969" />
-          <stop offset="0.39" stop-color="#004343" />
-          <stop offset="0.49" stop-color="#002626" />
-          <stop offset="0.59" stop-color="#011" />
-          <stop offset="0.69" stop-color="#000404" />
+          <stop offset="0" stopColor="aqua" />
+          <stop offset="0.08" stopColor="#00cdcd" />
+          <stop offset="0.19" stopColor="#009797" />
+          <stop offset="0.29" stopColor="#006969" />
+          <stop offset="0.39" stopColor="#004343" />
+          <stop offset="0.49" stopColor="#002626" />
+          <stop offset="0.59" stopColor="#011" />
+          <stop offset="0.69" stopColor="#000404" />
           <stop offset="0.78" />
         </radialGradient>
         <radialGradient
@@ -116,15 +116,15 @@ const Laptop = () => {
           gradientTransform="matrix(0.05, -0.03, 0.01, 0.01, 1408.1, -498.11)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="aqua" />
-          <stop offset="0.02" stop-color="#00f4f4" />
-          <stop offset="0.14" stop-color="#00bcbc" />
-          <stop offset="0.25" stop-color="#008a8a" />
-          <stop offset="0.37" stop-color="#005f5f" />
-          <stop offset="0.49" stop-color="#003d3d" />
-          <stop offset="0.61" stop-color="#022" />
-          <stop offset="0.74" stop-color="#000f0f" />
-          <stop offset="0.87" stop-color="#000404" />
+          <stop offset="0" stopColor="aqua" />
+          <stop offset="0.02" stopColor="#00f4f4" />
+          <stop offset="0.14" stopColor="#00bcbc" />
+          <stop offset="0.25" stopColor="#008a8a" />
+          <stop offset="0.37" stopColor="#005f5f" />
+          <stop offset="0.49" stopColor="#003d3d" />
+          <stop offset="0.61" stopColor="#022" />
+          <stop offset="0.74" stopColor="#000f0f" />
+          <stop offset="0.87" stopColor="#000404" />
           <stop offset="1" />
         </radialGradient>
         <radialGradient
@@ -135,14 +135,14 @@ const Laptop = () => {
           gradientTransform="matrix(0.04, 0, 0, 1.73, 1655.76, 109.79)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#c9c9c9" />
-          <stop offset="0.03" stop-color="#bbb" />
-          <stop offset="0.16" stop-color="#8a8a8a" />
-          <stop offset="0.3" stop-color="#5f5f5f" />
-          <stop offset="0.43" stop-color="#3d3d3d" />
-          <stop offset="0.57" stop-color="#222" />
-          <stop offset="0.71" stop-color="#0f0f0f" />
-          <stop offset="0.85" stop-color="#040404" />
+          <stop offset="0" stopColor="#c9c9c9" />
+          <stop offset="0.03" stopColor="#bbb" />
+          <stop offset="0.16" stopColor="#8a8a8a" />
+          <stop offset="0.3" stopColor="#5f5f5f" />
+          <stop offset="0.43" stopColor="#3d3d3d" />
+          <stop offset="0.57" stopColor="#222" />
+          <stop offset="0.71" stopColor="#0f0f0f" />
+          <stop offset="0.85" stopColor="#040404" />
           <stop offset="1" />
         </radialGradient>
         <radialGradient
@@ -152,11 +152,11 @@ const Laptop = () => {
           r="104.84"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#c157d3" />
-          <stop offset="0.14" stop-color="#b761d6" />
-          <stop offset="0.38" stop-color="#9d7de0" />
-          <stop offset="0.7" stop-color="#73aaee" />
-          <stop offset="1" stop-color="#44dcff" />
+          <stop offset="0" stopColor="#c157d3" />
+          <stop offset="0.14" stopColor="#b761d6" />
+          <stop offset="0.38" stopColor="#9d7de0" />
+          <stop offset="0.7" stopColor="#73aaee" />
+          <stop offset="1" stopColor="#44dcff" />
         </radialGradient>
         <radialGradient
           id="k"
@@ -165,12 +165,12 @@ const Laptop = () => {
           r="118.07"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#fff" />
-          <stop offset="0.1" stop-color="#f5fdff" />
-          <stop offset="0.28" stop-color="#d9f8ff" />
-          <stop offset="0.5" stop-color="#acefff" />
-          <stop offset="0.77" stop-color="#6ee4ff" />
-          <stop offset="1" stop-color="#34d9ff" />
+          <stop offset="0" stopColor="#fff" />
+          <stop offset="0.1" stopColor="#f5fdff" />
+          <stop offset="0.28" stopColor="#d9f8ff" />
+          <stop offset="0.5" stopColor="#acefff" />
+          <stop offset="0.77" stopColor="#6ee4ff" />
+          <stop offset="1" stopColor="#34d9ff" />
         </radialGradient>
       </defs>
       <g className={styles.b}>
