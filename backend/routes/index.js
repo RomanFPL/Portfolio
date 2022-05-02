@@ -15,4 +15,8 @@ router.get("/menu", async function (req, res, next) {
   res.json(await transformData(await getSheet("menu")));
 });
 
+router.get("/profile", async function (req, res, next) {
+  res.json(await transformData(await getSheet("profile")));
+});
+
 module.exports = router;
