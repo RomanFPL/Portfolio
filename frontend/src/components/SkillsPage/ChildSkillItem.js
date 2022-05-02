@@ -4,6 +4,18 @@ import styles from "./SkillsPage.module.css";
 const ChildSkillItem = ({
   item: { skillLabel, level, description, knowledgeList },
 }) => {
+  const knowledgeLabels = knowledgeList
+    ? knowledgeList.map((internalItem) => {
+        return (
+          <span key={internalItem} className={styles.itemList}>
+            {internalItem}
+          </span>
+        );
+      })
+    : "";
+
+  const descriptionExist = description ? <p>{description}</p> : "";
+
   return (
     <div className={styles.extendedLabel}>
       <div className={styles.labelItem}>
@@ -12,16 +24,8 @@ const ChildSkillItem = ({
           <ProgressBar progress={level} />
         </div>
       </div>
-      {description ? <p>{description}</p> : ""}
-      {knowledgeList
-        ? knowledgeList.map((internalItem) => {
-            return (
-              <span key={internalItem} className={styles.itemList}>
-                {internalItem}
-              </span>
-            );
-          })
-        : ""}
+      {descriptionExist}
+      {knowledgeLabels}
     </div>
   );
 };
