@@ -6,6 +6,19 @@ import ProgressBar from "../ProgressBar";
 const ProjectItem = ({
   project: { label, description, githubLink, projectPreviewLink, progress },
 }) => {
+  const githubPreview = githubLink ? (
+    <a
+      className={styles.githubLink}
+      href={githubLink}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Github />
+    </a>
+  ) : (
+    ""
+  );
+
   return (
     <div className={styles.projectWrapper}>
       <div className={styles.textPart}>
@@ -20,22 +33,11 @@ const ProjectItem = ({
       <div className={styles.visualPart}>
         <div className={styles.previewScreen}>
           <a href={projectPreviewLink}>
-            <img src={defaultProject} alt="" />
+            <img src={defaultProject} alt={label} />
           </a>
         </div>
       </div>
-      {githubLink ? (
-        <a
-          className={styles.githubLink}
-          href={githubLink}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Github />
-        </a>
-      ) : (
-        ""
-      )}
+      {githubPreview}
     </div>
   );
 };

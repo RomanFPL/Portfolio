@@ -6,6 +6,11 @@ import cn from "classnames";
 
 const ProjectsPage = () => {
   const { projects, menuStatus } = useContext(AppContext);
+
+  const projectList = projects.map((project) => {
+    return <ProjectItem key={project.label} project={project} />;
+  });
+
   return (
     <div>
       <h1>ProjectsPage</h1>
@@ -14,9 +19,7 @@ const ProjectsPage = () => {
           [styles.contentWrapperHidden]: !menuStatus,
         })}
       >
-        {projects.map((project) => {
-          return <ProjectItem key={project.label} project={project} />;
-        })}
+        {projectList}
       </div>
     </div>
   );
