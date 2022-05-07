@@ -1,5 +1,5 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-const token = require("../token.json")
+const token = require("../../google-credentials.json")
 
 async function getSheet(sheetName) {
   try{
