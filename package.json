@@ -7,6 +7,7 @@
     "start:backend:dev": "cd backend && npm run dev",
     "start:backend": "cd backend && npm run start",
     "start:frontend": "cd frontend && npm run start",
-    "start": "concurrently -k -p \"{name}: {time}\" -n \"FRONTEND,BACKEND\" \"npm:start:frontend\" \"npm:start:backend:dev\""
+    "start": "concurrently -k -p \"{name}: {time}\" -n \"FRONTEND,BACKEND\" \"npm:start:frontend\" \"npm:start:backend:dev\"",
+    "heroku:start": "cd backend && npm install && npm run start"
   }
 }
