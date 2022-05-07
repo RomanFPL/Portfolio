@@ -22,8 +22,8 @@ const Contacts = ({ item }) => {
     <div className={cn(styles.contacts, { [styles.contactsHidden]: !!item })}>
       <h2>Contacts</h2>
       <div>
-        {socialMedia.map(({ href, icon }) => {
-          return <a href={href}>{icon}</a>;
+        {socialMedia.map(({ href, icon }, idx) => {
+          return <a key={idx.toString()} href={href}>{icon}</a>;
         })}
       </div>
     </div>

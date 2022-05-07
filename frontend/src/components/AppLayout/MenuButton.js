@@ -6,7 +6,7 @@ const MenuButton = ({ menuStatus, menuAction }) => {
   const spans = new Array(9)
     .fill(1, 0, 9)
     .map((span, idx) => (
-      <span className={idx % 2 === 1 || idx === 4 ? "" : styles.transparent} />
+      <span key={idx.toString()} className={idx % 2 === 1 || idx === 4 ? "" : styles.transparent} />
     ));
 
   return (
