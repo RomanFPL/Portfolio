@@ -4,8 +4,9 @@
     "concurrently": "^7.1.0"
   },
   "scripts": {
-    "start:backend": "cd backend && npm run dev",
+    "start:backend:dev": "cd backend && npm run dev",
+    "start:backend": "cd backend && npm run start",
     "start:frontend": "cd frontend && npm run start",
-    "start": "concurrently -k -p \"{name}: {time}\" -n \"FRONTEND,BACKEND\" \"npm:start:frontend\" \"npm:start:backend\""
+    "start": "concurrently -k -p \"{name}: {time}\" -n \"FRONTEND,BACKEND\" \"npm:start:frontend\" \"npm:start:backend:dev\""
   }
 }
