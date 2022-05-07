@@ -1,11 +1,11 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-require("dotenv").config();
+const token = require("../token.json")
 
 async function getSheet(sheetName) {
-  const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID);
+  const doc = new GoogleSpreadsheet(token.sheet_id);
   await doc.useServiceAccountAuth({
-    client_email: process.env.GOOGLE_SERVICE_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY,
+    client_email: token.client_email,
+    private_key: token.private_key,
   });
   await doc.loadInfo();
   return (sheet = doc.sheetsByTitle[sheetName]);
