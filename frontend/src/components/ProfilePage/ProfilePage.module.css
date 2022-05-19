@@ -15,6 +15,12 @@
   position: relative;
 }
 
+.contentWrapper > div > svg {
+  display: block;
+  margin: auto;
+  padding-right: 30px;
+}
+
 .contentWrapper > div > p {
   font-style: italic;
   text-indent: 20px;
@@ -35,7 +41,23 @@
 }
 
 @media (max-width: 1100px) {
+  .contentWrapper > div:first-child {
+    width: 50%;
+  }
 }
 
 @media (max-width: 850px) {
+  .contentWrapper {
+    flex-direction: column-reverse;
+  }
+  .contentWrapper > div:first-child {
+    width: 80%;
+  }
+  .contentWrapper > div {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .contentWrapper > div > p {
+    font-size: 20px;
+  }
 }
