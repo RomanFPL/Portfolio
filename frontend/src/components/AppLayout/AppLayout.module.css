@@ -207,6 +207,12 @@ nav ul {
 }
 
 @media (max-width: 850px) {
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   nav ul {
     display: flex;
     flex-direction: column;
@@ -216,7 +222,6 @@ nav ul {
   }
 
   .menu {
-    margin-top: 30px;
     align-items: start;
     position: static;
     height: fit-content;
