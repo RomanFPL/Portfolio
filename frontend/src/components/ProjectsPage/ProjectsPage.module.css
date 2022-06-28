@@ -1,12 +1,14 @@
 .contentWrapper {
   margin-top: 20px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .contentWrapper > div {
   width: 46%;
+  box-sizing: border-box;
   min-height: 180px;
   transition: all 1s ease-in-out;
 }
@@ -95,10 +97,23 @@
   padding-bottom: 6px;
   align-self: flex-end;
   justify-self: end;
+  white-space: nowrap;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1440px) {
+  .contentWrapper > div {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 850px) {
+  .contentWrapper > div {
+    width: 100%;
+    display: block;
+  }
+  .projectWrapper > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
