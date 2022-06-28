@@ -12,17 +12,14 @@
   width: fit-content;
   background: var(--invertedBorder);
 }
+
 .contentWrapper {
   color: var(--mainTextColor);
   margin-top: 20px;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px; */
 }
 
 .extendedLabel {
   margin-top: 10px;
-  /* transform: rotateX(40deg); */
 }
 
 .labelItem {
@@ -54,8 +51,14 @@
   margin: 10px 10px 0 0;
 }
 
-@media (max-width: 1100px) {
-}
-
 @media (max-width: 850px) {
+  .mainLabel {
+    grid-template-columns: 1fr;
+    border-top: 5px solid var(--invertedBorder);
+  }
+  .labelItem {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
 }
