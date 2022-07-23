@@ -1,6 +1,6 @@
 import { Facebook, LinkedIn, Mail } from "../../common/Icons";
 import styles from "./AppLayout.module.css";
-import cn from "classnames";
+import classNames from "classnames";
 
 const socialMedia = [
   {
@@ -19,7 +19,7 @@ const socialMedia = [
 
 const Contacts = ({ item }) => {
   return (
-    <div className={cn(styles.contacts, { [styles.contactsHidden]: !!item })}>
+    <div className={classNames(styles.contacts, { [styles.contactsHidden]: !!item })}>
       <h2>Contacts</h2>
       <div>
         {socialMedia.map(({ href, icon }, idx) => {

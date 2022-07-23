@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import ProjectItem from "./ProjectItem";
 import styles from "./ProjectsPage.module.css";
-import cn from "classnames";
+import classNames from "classnames";
 
 const ProjectsPage = () => {
   const { projects, menuStatus } = useContext(AppContext);
@@ -15,7 +15,7 @@ const ProjectsPage = () => {
     <div>
       <h1>ProjectsPage</h1>
       <div
-        className={cn(styles.contentWrapper, {
+        className={classNames(styles.contentWrapper, {
           [styles.contentWrapperHidden]: !menuStatus,
         })}
       >

@@ -4,9 +4,9 @@ import { Github } from "../../common/Icons";
 import ProgressBar from "../ProgressBar";
 
 const ProjectItem = ({
-  project: { label, description, githubLink, projectPreviewLink, progress },
+  project: { label, description, githubLink, projectPreviewLink, progress, imgLink },
 }) => {
-  const githubPreview = githubLink ? (
+  const githubPreview = githubLink && (
     <a
       className={styles.githubLink}
       href={githubLink}
@@ -15,9 +15,9 @@ const ProjectItem = ({
     >
       <Github />
     </a>
-  ) : (
-    ""
   );
+
+  console.log(imgLink)
 
   return (
     <div className={styles.projectWrapper}>
@@ -33,7 +33,7 @@ const ProjectItem = ({
       <div className={styles.visualPart}>
         <div className={styles.previewScreen}>
           <a href={projectPreviewLink}>
-            <img src={defaultProject} alt={label} />
+            <img src={imgLink || defaultProject} alt={label} />
           </a>
         </div>
       </div>
