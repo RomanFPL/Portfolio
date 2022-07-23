@@ -12,7 +12,7 @@ const ChildSkillItem = ({
           </span>
         );
       })
-    : "";
+    : null;
 
   const descriptionExist = description ? <p>{description}</p> : "";
 
