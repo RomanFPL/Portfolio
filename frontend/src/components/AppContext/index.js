@@ -9,10 +9,10 @@ const AppContextProvider = ({ children }) => {
   const domain = process.env.REACT_APP_API_SERVICE;
   const [menuOpened, setMenuOpened] = useState(true);
   const [isError, setIsError] = useState(false);
-  const [projectData, setProjectData] = useState(undefined);
-  const [skillData, setSkillData] = useState(undefined);
-  const [menuData, setMenuData] = useState(undefined);
-  const [profile, setProfile] = useState(undefined);
+  const [projectData, setProjectData] = useState(null);
+  const [skillData, setSkillData] = useState(null);
+  const [menuData, setMenuData] = useState(null);
+  const [profile, setProfile] = useState(null);
 
   const fetchData = useCallback(async () => {
     const fetchRoots = [
