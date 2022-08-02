@@ -3,27 +3,31 @@ import defaultProject from "../../common/noImg.svg";
 import classNames from "classnames";
 
 import styles from "./ImagePatch.module.css";
+import Spinner from "../Spinner";
 
-const ImagePatch = ({imgLink, label}) => {
+const ImagePatch = ({ imgLink, label }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const onLoad = () => {
     setIsLoaded(true);
   };
-  
-  if(imgLink){
+
+  if (imgLink) {
     return (
-      <img
-      className={classNames(styles.previewScreenImg, {
-        [styles.hideImg]: !isLoaded,
-      })}
-      onLoad={onLoad}
-      src={imgLink}
-      alt={label}
-    />
-    )
+      <>
+        <img
+          className={classNames(styles.previewScreenImg, {
+            [styles.hideImg]: !isLoaded,
+          })}
+          onLoad={onLoad}
+          src={imgLink}
+          alt={label}
+        />
+        {!isLoaded && <Spinner />}
+      </>
+    );
   }
-  
+
   return <img width="100px" src={defaultProject} alt="No project" />;
 };
 
