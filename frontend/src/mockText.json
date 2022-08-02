@@ -1,0 +1,31 @@
+{
+  "defaultProjectImage": "No project image provided",
+  "commonError": "Here appeared the following error:",
+  "errorTextPage": "Something went wrong.",
+  "pageNotExist": "This page does not exist.",
+  "spinnerText": "Loading",
+  "menu": {
+    "main": "menu",
+    "profile": "profile",
+    "projects": "projects",
+    "skills": "skills"
+  },
+  "pageLinks": {
+    "main": "/",
+    "about": "/about",
+    "projects": "/projects",
+    "skills": "/skills"
+  },
+  "pages": {
+    "skills": "SkillsPage",
+    "projects": "ProjectsPage",
+    "about": "About"
+  },
+  "socialMedia": {
+    "facebook": "/hi",
+    "linkedIn": "/",
+    "mail": "/"
+  },
+  "progressStatus": ["in progress", "finished"],
+  "maximumProgressRate": "100"
+}

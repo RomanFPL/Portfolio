@@ -3,6 +3,8 @@ import { getApiData } from "../../service";
 import ErrorPage from "../ErrorPage";
 import Spinner from "../Spinner";
 
+import text from "../../mockText.json";
+
 export const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
@@ -16,37 +18,37 @@ const AppContextProvider = ({ children }) => {
 
   const fetchData = useCallback(async () => {
     const fetchRoots = [
-      {link: "skills", state: setSkillData},
-      {link: "projects", state: setProjectData},
-      {link: "menu", state: setMenuData},
-      {link: "profile", state: setProfile},
-    ]
+      { link: text.menu.skills, state: setSkillData },
+      { link: text.menu.projects, state: setProjectData },
+      { link: text.menu.main, state: setMenuData },
+      { link: text.menu.profile, state: setProfile },
+    ];
 
-    const data = fetchRoots.map(async ({link, state}) => {
-      const dataValues =await  getApiData(domain + link);
-      state(dataValues);  
-    })
+    const data = fetchRoots.map(async ({ link, state }) => {
+      const dataValues = await getApiData(domain + link);
+      state(dataValues);
+    });
 
-    try{
-     await Promise.all([...data])
+    try {
+      await Promise.all([...data]);
     } catch (e) {
-      setIsError(true)
-      console.log(`Here appeared the following error: ${e}`)
+      setIsError(true);
+      console.log(`${text.commonError}${e}`);
     }
-  }, [domain])
+  }, [domain]);
 
-  
   useEffect(() => {
     fetchData();
   }, [domain, fetchData]);
 
-  const isLoading = (!projectData || !skillData || !menuData || !profile) && !isError
+  const isLoading =
+    (!projectData || !skillData || !menuData || !profile) && !isError;
 
   if (isLoading) {
     return <Spinner />;
   }
 
-  if(isError){
+  if (isError) {
     return <ErrorPage />;
   }
 

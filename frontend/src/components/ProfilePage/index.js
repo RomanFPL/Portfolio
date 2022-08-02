@@ -3,6 +3,8 @@ import Laptop from "../../common/Icons/Laptop";
 import { AppContext } from "../AppContext";
 import styles from "./ProfilePage.module.css";
 
+import text from "../../mockText.json";
+
 const ProfilePage = () => {
   const { profile } = useContext(AppContext);
 
@@ -17,7 +19,7 @@ const ProfilePage = () => {
 
   return (
     <>
-      <h1>About</h1>
+      <h1>{text.pages.about}</h1>
       <div className={styles.contentWrapper}>
         <div>{paragraphs}</div>
         <div>

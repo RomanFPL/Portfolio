@@ -1,9 +1,11 @@
 import styles from "./Spinner.module.css";
 
+import text from "../../mockText.json";
+
 const Spinner = () => {
   return (
     <div className={styles.loaderCircle}>
-      Loading
+      {text.spinnerText}
       <span></span>
     </div>
   );

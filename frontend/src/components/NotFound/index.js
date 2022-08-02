@@ -1,9 +1,13 @@
 import styles from "./NotFound.module.css";
 
+import text from "../../mockText.json";
+
 const NotFound = () => {
   return (
-    <div className={styles.wrapText}><h2>This page does not exist.</h2></div>
-  )
-}
+    <div className={styles.wrapText}>
+      <h2>{text.pageNotExist}</h2>
+    </div>
+  );
+};
 
-export default NotFound
+export default NotFound;

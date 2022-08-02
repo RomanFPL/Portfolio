@@ -3,6 +3,8 @@ import { Github } from "../../common/Icons";
 import ProgressBar from "../ProgressBar";
 import ImagePatch from "../ImagePatch";
 
+import text from "../../mockText.json";
+
 const ProjectItem = ({ project }) => {
   if (!project) return null;
 
@@ -31,7 +33,11 @@ const ProjectItem = ({ project }) => {
       <div className={styles.textPart}>
         <div className={styles.projectProgress}>
           <h2>{label}</h2>
-          <span>{progress === "100" ? "finished" : "in progress"}</span>
+          <span>
+            {progress === text.maximumProgressRate
+              ? text.progressStatus[1]
+              : text.progressStatus[0]}
+          </span>
           <ProgressBar progress={progress} />
         </div>
         <h3>Description</h3>
@@ -40,7 +46,7 @@ const ProjectItem = ({ project }) => {
       <div className={styles.visualPart}>
         <div className={styles.previewScreen}>
           <a href={projectPreviewLink}>
-            <ImagePatch imgLink={imgLink} label={label}/>
+            <ImagePatch imgLink={imgLink} label={label} />
           </a>
         </div>
       </div>
