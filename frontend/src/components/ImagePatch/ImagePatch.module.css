@@ -2,3 +2,13 @@
   width: 100px;
   height: 100px;
 }
+
+.previewScreenImg {
+  object-fit: cover;
+  width: 240px;
+  height: 135px;
+}
+
+.hideImg {
+  display: none;
+}
