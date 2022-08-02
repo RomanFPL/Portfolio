@@ -168,10 +168,6 @@ nav ul {
   width: 8px;
 }
 
-.menuBtn:hover span {
-  background: var(--mainContextColor);
-}
-
 .menuBtnClose {
   gap: 0;
   transform: rotateZ(45deg);
