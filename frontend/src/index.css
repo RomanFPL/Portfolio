@@ -1,6 +1,5 @@
 :root {
   --mainContextColor: #00eaff;
-  /* --mainContextColor: #768687; */
   --mainTextColor: #ccc;
   --invertedBorder: #3c3c3c;
   --bgcolor: #262626;
@@ -18,6 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--bgcolor);
 }
 
 code {
