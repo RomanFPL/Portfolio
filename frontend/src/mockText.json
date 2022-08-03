@@ -22,9 +22,9 @@
     "about": "About"
   },
   "socialMedia": {
-    "facebook": "/hi",
-    "linkedIn": "/",
-    "mail": "/"
+    "facebook": "https://www.facebook.com/profile.php?id=100012667419370",
+    "linkedIn": "https://www.linkedin.com/in/roman-franko-a0999b1b6/",
+    "mail": "mailto:roma.franko99@gmail.com"
   },
   "progressStatus": ["in progress", "finished"],
   "maximumProgressRate": "100"
